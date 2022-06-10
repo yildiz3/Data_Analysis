@@ -172,7 +172,7 @@ SELECT DATEDIFF(SECOND, '2022-05-10', GETDATE())
 
 ---
 
---Teslimat tarihi ile kargolama/teslimat tarihi arasýndaki gün farkýný bulunuz.
+--Teslimat tarihi ile kargolama/teslimat tarihi arasÃ½ndaki gÃ¼n farkÃ½nÃ½ bulunuz.
 
 SELECT	*, DATEDIFF(DAY, order_date, shipped_date) Diff_of_day
 FROM	sale.orders
@@ -273,7 +273,7 @@ FROM STRING_SPLIT('jack,martin,alain,owen', ',')
 ----
 
 
----'character' kelimesinin ilk harfini büyülten bir script yazýnýz.
+---'character' kelimesinin ilk harfini bÃ¼yÃ¼lten bir script yazÃ½nÃ½z.
 
 
 SELECT UPPER ('character')
@@ -290,7 +290,7 @@ select LEN('character')
 SELECT LOWER (SUBSTRING('character', 2, LEN('character')))
 
 
---SONUÇ
+--SONUÃ‡
 SELECT UPPER (LEFT('character', 1)) + LOWER (SUBSTRING('character', 2, LEN('character')))
 
 
